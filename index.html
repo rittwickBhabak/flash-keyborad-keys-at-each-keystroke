@@ -10,8 +10,11 @@
     <style>
         .key {
             height: 50px;
+            cursor: pointer;
         }
-
+        .key:hover{
+            background-color: bisque;
+        }
         .sign {
             font-size: 30px;
         }
@@ -19,160 +22,162 @@
 </head>
 
 <body>
-    <div class="container border rounded my-4">
+    <div class="container border rounded my-4 d-none d-lg-block">
         <div class="row">
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key`" class="col key border m-1 d-flex flex-column">
                 <div>~</div>
                 <div>`</div>
             </div>
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key1" class="col key border m-1 d-flex flex-column">
                 <div>!</div>
                 <div>1</div>
             </div>
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key2" class="col key border m-1 d-flex flex-column">
                 <div>@</div>
                 <div>2</div>
             </div>
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key3" class="col key border m-1 d-flex flex-column">
                 <div>#</div>
                 <div>3</div>
             </div>
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key4" class="col key border m-1 d-flex flex-column">
                 <div>$</div>
                 <div>4</div>
             </div>
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key5" class="col key border m-1 d-flex flex-column">
                 <div>%</div>
                 <div>5</div>
             </div>
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key6" class="col key border m-1 d-flex flex-column">
                 <div>^</div>
                 <div>6</div>
             </div>
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key7" class="col key border m-1 d-flex flex-column">
                 <div>&</div>
                 <div>7</div>
             </div>
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key8" class="col key border m-1 d-flex flex-column">
                 <div>*</div>
                 <div>8</div>
             </div>
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key9" class="col key border m-1 d-flex flex-column">
                 <div>(</div>
                 <div>9</div>
             </div>
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key0" class="col key border m-1 d-flex flex-column">
                 <div>)</div>
                 <div>0</div>
             </div>
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key-" class="col key border m-1 d-flex flex-column">
                 <div>_</div>
                 <div>-</div>
             </div>
-            <div class="col key border m-1 d-flex flex-column">
+            <div id="key=" class="col key border m-1 d-flex flex-column">
                 <div>+</div>
                 <div>=</div>
             </div>
-            <div class="col-2 border m-1 d-flex flex-column">
+            <div id="keyback" class="col-2 key border m-1 d-flex flex-column">
                 <div>Backspace</div>
                 <div>&#8592;</div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col border m-1 key d-flex flex-column">
+            <div id="keytab" class="col border m-1 key d-flex flex-column">
                 <div>Tab</div>
                 <div>&#8633;</div>
             </div>
-            <div class="col border m-1 key">Q</div>
-            <div class="col border m-1 key">W</div>
-            <div class="col border m-1 key">E</div>
-            <div class="col border m-1 key">R</div>
-            <div class="col border m-1 key">T</div>
-            <div class="col border m-1 key">Y</div>
-            <div class="col border m-1 key">U</div>
-            <div class="col border m-1 key">I</div>
-            <div class="col border m-1 key">O</div>
-            <div class="col border m-1 key">P</div>
-            <div class="col border m-1 key d-flex flex-column">
+            <div id="keyQ" class="col border m-1 key">Q</div>
+            <div id="keyW" class="col border m-1 key">W</div>
+            <div id="keyE" class="col border m-1 key">E</div>
+            <div id="keyR" class="col border m-1 key">R</div>
+            <div id="keyT" class="col border m-1 key">T</div>
+            <div id="keyY" class="col border m-1 key">Y</div>
+            <div id="keyU" class="col border m-1 key">U</div>
+            <div id="keyI" class="col border m-1 key">I</div>
+            <div id="keyO" class="col border m-1 key">O</div>
+            <div id="keyP" class="col border m-1 key">P</div>
+            <div id="key[" class="col border m-1 key d-flex flex-column">
                 <div>{</div>
                 <div>[</div>
             </div>
-            <div class="col border m-1 key d-flex flex-column">
+            <div id="key]" class="col border m-1 key d-flex flex-column">
                 <div>}</div>
                 <div>]</div>
             </div>
-            <div class="col border m-1 key d-flex flex-column">
+            <div id="key\" class="col border m-1 key d-flex flex-column">
                 <div>|</div>
                 <div>\</div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col border m-1 key">Caps Lock</div>
-            <div class="col border m-1 key">A</div>
-            <div class="col border m-1 key">S</div>
-            <div class="col border m-1 key">D</div>
-            <div class="col border m-1 key">F</div>
-            <div class="col border m-1 key">G</div>
-            <div class="col border m-1 key">H</div>
-            <div class="col border m-1 key">J</div>
-            <div class="col border m-1 key">K</div>
-            <div class="col border m-1 key">L</div>
-            <div class="col border m-1 key d-flex flex-column">
+            <div id="keyCaps" class="col border m-1 key">Caps Lock</div>
+            <div id="keyA" class="col border m-1 key">A</div>
+            <div id="keyS" class="col border m-1 key">S</div>
+            <div id="keyD" class="col border m-1 key">D</div>
+            <div id="keyF" class="col border m-1 key">F</div>
+            <div id="keyG" class="col border m-1 key">G</div>
+            <div id="keyH" class="col border m-1 key">H</div>
+            <div id="keyJ" class="col border m-1 key">J</div>
+            <div id="keyK" class="col border m-1 key">K</div>
+            <div id="keyL" class="col border m-1 key">L</div>
+            <div id="key;" class="col border m-1 key d-flex flex-column">
                 <div>:</div>
                 <div>;</div>
             </div>
-            <div class="col border m-1 key d-flex flex-column">
+            <div id="key'" class="col border m-1 key d-flex flex-column">
                 <div>"</div>
                 <div>'</div>
             </div>
-            <div class="col border m-1 key d-flex flex-column">
+            <div id="keyenter" class="col border m-1 key d-flex flex-column">
                 <div>Enter</div>
                 <div>&#8626;</div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col border m-1 key d-flex flex-column">
+            <div id="keyleftshift" class="col border m-1 key d-flex flex-column">
                 <div>Shift</div>
                 <div>&#8679;</div>
             </div>
-            <div class="col border m-1 key">Z</div>
-            <div class="col border m-1 key">X</div>
-            <div class="col border m-1 key">C</div>
-            <div class="col border m-1 key">V</div>
-            <div class="col border m-1 key">B</div>
-            <div class="col border m-1 key">N</div>
-            <div class="col border m-1 key">M</div>
-            <div class="col border m-1 key d-flex flex-column">
+            <div id="keyZ" class="col border m-1 key">Z</div>
+            <div id="keyX" class="col border m-1 key">X</div>
+            <div id="keyC" class="col border m-1 key">C</div>
+            <div id="keyV" class="col border m-1 key">V</div>
+            <div id="keyB" class="col border m-1 key">B</div>
+            <div id="keyN" class="col border m-1 key">N</div>
+            <div id="keyM" class="col border m-1 key">M</div>
+            <div id="key," class="col border m-1 key d-flex flex-column">
                 <div>&lt;</div>
                 <div>,</div>
             </div>
-            <div class="col border m-1 key d-flex flex-column">
+            <div id="key." class="col border m-1 key d-flex flex-column">
                 <div>&gt;</div>
                 <div>.</div>
             </div>
-            <div class="col border m-1 key d-flex flex-column">
+            <div id="key/" class="col border m-1 key d-flex flex-column">
                 <div>?</div>
                 <div>/</div>
             </div>
-            <div class="col border m-1 key d-flex flex-column">
+            <div id="keyrightshift" class="col border m-1 key d-flex flex-column">
                 <div>Shift</div>
                 <div>&#8679;</div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col border m-1 key">Ctrl</div>
-            <div class="col border m-1 key">Win</div>
-            <div class="col border m-1 key">Alt</div>
-            <div class="col-6 border m-1 key"></div>
-            <div class="col border m-1 key">Alt</div>
-            <div class="col border m-1 key">Win</div>
-            <div class="col border m-1 key">Ctrl</div>
+            <div id="keyControlLeft" class="col border m-1 key">Ctrl</div>
+            <div id="keyMetaLeft" class="col border m-1 key">Win</div>
+            <div id="keyAltLeft" class="col border m-1 key">Alt</div>
+            <div id="keyspace" class="col-6 border m-1 key"></div>
+            <div id="keyAltRight" class="col border m-1 key">Alt</div>
+            <div id="keyMetaRight" class="col border m-1 key">Win</div>
+            <div id="keyControlRight" class="col border m-1 key">Ctrl</div>
         </div>
     </div>
+
+    <div class="my-4 container"><input type="text" name="" id="text" class="form-control" autofocus></div>
     <script src='index.js'></script>
 </body>
 
